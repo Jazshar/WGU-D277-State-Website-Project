@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Home Alabama</title> <link rel="stylesheet" href="style.css">
+</head>
+<body class="main" >
+    <header class="state">State of Alabama</header>
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <li><a href="index.html" id="navbar_logo"> Home</a>
+             
+        </ul>
+         </nav>
+  
+        <section>
+            <img src="img/2003_AL_Proof.png" alt="Alabama 2003 Coin" class="coin">
+            <p>
+            Thank you for your interest in the Beautiful State of Alabama. On this site you find useful facts
+            regarding our most popular and diverse cities. <aside>The great state of Alabama has much to offer
+            in the ways of food, nature, and culture so come on down and stay awhile!</aside>
+        </p>
+        <aside>       
+<p> Fun Facts About our State:</p>
+        <OL class="fun">
+<li>Alabama was named after the Alabama River</li> <br>
+<li>Alabama is home to the Rosa Parks Museum</li> <br>
+<li> Alabama was the first place a 911 call was placed</li> <br>
+<li> Windshield Wipers were invented in Alabama</li><br>
+        </OL>
+        <p id="facts"> State Fun Facts from AboutTown.com</p>
+    
+    </aside>
+    <p class="learn"> Learn More About Our Cities</p>
+    <nav class="navbar">
+    <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a href="montgomery.html" class="navbar__links">Montgomery
+            </a>
+        </li>
+        <li class="navbar__item">
+            <a href="birmingham.html" class="navbar__links">Birmingham
+            </a>
+        </li>
+        <li class="navbar__item">
+            <a href="huntsville.html" class="navbar__links">Huntsville
+            </a>
+        </li>
+    </ul>
+     </nav>
+     
+<form class="form">
+    <p> Ask Us Anything!</p>
+    <input type="text" id="name" class="fields" name="name" placeholder="First and Last Name">
+    <input type="text" id="email1" class="fields" name="email" placeholder="Email Address" >
+    <input type="text" id="email2" class="fields" placeholder="Confirm Email Address" >
+    <input type="text" id="name" class="fields" name="name" placeholder="Question">
+    <input id="submit" type="button" onclick="verify()" value="Submit">
+ </form>
+ <script>
+ function verify()
+{
+if(document.getElementById("email1").value === document.getElementById("email2").value) {
+
+   alert("matched")
+
+} else {
+  document.getElementById("submit").setAttribute("disabled", "disabled");
+  alert("Email Addresses do not match")
+ }
+
+}
+ </script>
+        </section>
+ 
+</body>
+</html>
